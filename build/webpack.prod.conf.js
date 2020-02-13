@@ -78,14 +78,13 @@ const webpackConfig = merge(baseWebpackConfig, {
       // necessary to consistently work with multiple chunks via CommonsChunkPlugin
       chunksSortMode: 'dependency'
     }),
-    // TODO
-    // new HtmlWebpackPlugin({
-    //   filename: 'app2.html',
-    //   template: 'app2_template.html',
-    //   inject: true,
-    //   chunks: ['app2', "vendor", "manifest"],
-    //   chunksSortMode: 'dependency'
-    // }),
+    new HtmlWebpackPlugin({
+      filename: 'index.html',
+      template: 'app2_template.html',
+      inject: true,
+      chunks: ['tapioca', "vendor", "manifest"],
+      chunksSortMode: 'dependency'
+    }),
     // keep module.id stable when vendor modules does not change
     new webpack.HashedModuleIdsPlugin(),
     // enable scope hoisting

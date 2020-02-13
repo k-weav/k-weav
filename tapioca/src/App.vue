@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div id="tapioca-app">
     <img src="./assets/logo.png">
     <router-view/>
   </div>
@@ -7,12 +7,12 @@
 
 <script>
 export default {
-  name: 'App'
+  name: 'TapiocaApp'
 }
 </script>
 
 <style>
-#app {
+#tapioca-app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
